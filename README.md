@@ -13,14 +13,14 @@
 
 ## 添加你的正式视频
 
-1. 将视频文件上传到任意可公开访问的存储位置（可以是 GitHub Releases、云存储或现成的视频 CDN）。
-2. 打开 [`script.js`](script.js)，将 `VIDEO_SOURCE` 常量替换为视频的真实 URL：
-   ```js
-   const VIDEO_SOURCE = 'https://your-hosted-file.mp4';
-   ```
-3. 推送更新后的代码，GitHub Pages 会自动重新部署。重新加载网页即可看到你的正式视频。
+你现在可以直接把官方回答的 MP4 放在仓库里，无需额外的托管服务：
 
-如果你暂时还没有准备好正式视频，可以点击页面上的 “Preview with Sample Video” 按钮预览示例素材。
+1. 将文件命名为 `nus-ba-video.mp4`，并放入项目根目录下的 [`media/`](media/) 文件夹（若仓库里没有该文件夹，可自行创建）。
+2. Git 建议：若视频超过 25 MB，请考虑使用 [Git LFS](https://git-lfs.com) 或发布到 GitHub Releases 以避免推送失败。
+3. 文件上传后，无需修改任何脚本，页面会自动尝试加载 `media/nus-ba-video.mp4`。若文件尚未上传，网页会继续显示占位提示。
+4. 推送更新后的代码即可触发 GitHub Pages 重新部署。
+
+如果你暂时还没有准备好正式视频，可以点击页面上的 “预览示例视频” 按钮预览示例素材。
 
 ## 自定义页面内容
 

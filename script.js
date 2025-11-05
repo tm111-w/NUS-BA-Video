@@ -1,5 +1,5 @@
 (function () {
-  const VIDEO_SOURCE = '';
+  const VIDEO_SOURCE = 'media/nus-ba-video.mp4';
   const SAMPLE_VIDEO = 'https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4';
 
   const wrapper = document.querySelector('.video-wrapper');
@@ -20,12 +20,23 @@
     markReady();
   }
 
-  if (VIDEO_SOURCE) {
-    loadVideo(VIDEO_SOURCE);
-  } else {
-    // Show placeholder state when no official video is configured yet
-    placeholder?.setAttribute('aria-live', 'polite');
+  async function tryLoadOfficialVideo() {
+    if (!VIDEO_SOURCE) {
+      placeholder?.setAttribute('aria-live', 'polite');
+      return;
+    }
+
+    try {
+      const response = await fetch(VIDEO_SOURCE, { method: 'HEAD' });
+      if (!response.ok) throw new Error('Video not found');
+      loadVideo(VIDEO_SOURCE);
+    } catch (error) {
+      console.warn('Official video not found yet. Showing placeholder instead.', error);
+      placeholder?.setAttribute('aria-live', 'polite');
+    }
   }
+
+  tryLoadOfficialVideo();
 
   previewButton?.addEventListener('click', () => {
     loadVideo(SAMPLE_VIDEO);
