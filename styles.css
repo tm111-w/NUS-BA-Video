@@ -249,18 +249,3 @@ a:focus {
   max-width: min(1100px, 92vw);
   text-align: center;
 }
-
-/* 标题永远一行显示 */
-.title-oneline{
-  display: block;
-  white-space: nowrap;          /* 不换行 */
-  word-break: keep-all;         /* 不在单词内断开 */
-  overflow-wrap: normal;        /* 关闭任意位置断行 */
-  width: 100%;
-  margin: 0 0 1rem;
-  font-weight: 800;
-  font-size: clamp(28px, 7vw, 56px);  /* 小屏自动缩小，避免必须换行 */
-  line-height: 1.1;
-  overflow: hidden;             /* 超小屏时不抖动 */
-  text-overflow: ellipsis;      /* 极端窄屏加省略号 */
-}
