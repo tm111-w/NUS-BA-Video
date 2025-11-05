@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Video placeholder</title>
+  <desc id="desc">Stylised gradient background with play icon.</desc>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b2a" />
+      <stop offset="50%" stop-color="#183c5a" />
+      <stop offset="100%" stop-color="#2ec4b6" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#02111d" flood-opacity="0.5" />
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#gradient)" />
+  <g filter="url(#shadow)" transform="translate(0, 8)">
+    <circle cx="640" cy="340" r="150" fill="rgba(13, 27, 42, 0.6)" />
+    <polygon points="600,260 600,420 720,340" fill="#f6f9fc" />
+  </g>
+  <text x="50%" y="85%" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" fill="rgba(246, 249, 252, 0.85)">
+    NUS Business Analytics Video Question
+  </text>
+</svg>
