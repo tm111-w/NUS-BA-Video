@@ -1,4 +1,5 @@
 (function () {
+  const VIDEO_SOURCE = 'media/nus-ba-video.mp4';
   const VIDEO_SOURCE = 'media/nus-ba-video1.mp4';
   const SAMPLE_VIDEO = 'https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4';
 
