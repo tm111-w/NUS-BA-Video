@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +10,36 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <section class="video-card">
+  <header class="hero">
+    <div class="container">
       <h1>NUS BA Video Question</h1>
-      <p class="description">将正式的 MP4 上传到 <code>media/nus-ba-video.mp4</code>，页面就会在这里展示你的云端视频。</p>
-      <div class="video-wrapper" data-video-pending>
-        <video id="questionVideo" controls preload="metadata" poster="poster.svg">
-          <source id="videoSource" src="" type="video/mp4">
-          您的浏览器不支持 video 标签。
-        </video>
-        <div class="video-placeholder">
-          <span class="placeholder-icon" aria-hidden="true">🎬</span>
-          <p>上传后刷新页面即可播放正式视频。现在可以点击下方按钮预览示例素材。</p>
-          <button id="previewButton" type="button" class="cta">预览示例视频</button>
+      <p class="lead">
+        Publish your video answer once and share the GitHub Pages link anywhere—no servers or manual uploads after each edit.
+      </p>
+      <a class="cta" href="#video">Watch the Video</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="video" class="section">
+      <div class="container">
+        <h2>Video Response</h2>
+        <p class="section-intro">Host your official answer in the cloud so admissions officers and mentors can revisit it anytime.</p>
+        <div class="video-wrapper" data-video-pending>
+          <video id="questionVideo" controls preload="metadata" poster="poster.svg">
+            <source id="videoSource" src="" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-placeholder">
+            <span class="placeholder-icon" aria-hidden="true">🎬</span>
+            <p>将 <code>media/nus-ba-video.mp4</code> 上传到仓库后，正式视频会在此处播放。</p>
+            <button id="previewButton" type="button" class="cta secondary">预览示例视频</button>
+          </div>
         </div>
       </div>
     </section>
-  </main>
+
+
   <script src="script.js"></script>
 </body>
 </html>
