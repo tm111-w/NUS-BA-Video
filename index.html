@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NUS BA Video Question</title>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NUS Business Analytics Video Question</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,87 +11,25 @@
 </head>
 <body>
   <main>
-    <section class="video-card">
-      <h1>NUS BA Video Question</h1>
-      <div class="video-wrapper" data-video-pending>
-        <video id="questionVideo" controls preload="metadata" poster="poster.svg">
-          <source id="videoSource" src="" type="video/mp4">
-          您的浏览器不支持 video 标签。
-        </video>
-        <div class="video-placeholder">
-          <span class="placeholder-icon" aria-hidden="true">🎬</span>
-          <p>上传后刷新页面即可播放正式视频。现在可以点击下方按钮预览示例素材。</p>
-          <button id="previewButton" type="button" class="cta">预览示例视频</button>
-  <header class="hero">
-    <div class="container">
-      <h1>NUS Business Analytics Video Question</h1>
-      <p class="lead">
-        Publish your video answer once and share the GitHub Pages link anywhere—no servers or manual uploads after each edit.
-      </p>
-      <a class="cta" href="#video">Watch the Video</a>
-    </div>
-  </header>
-
-  <main>
     <section id="video" class="section">
       <div class="container">
         <h2>Video Response</h2>
-        <p class="section-intro">Host your official answer in the cloud so admissions officers and mentors can revisit it anytime.</p>
         <div class="video-wrapper" data-video-pending>
           <video id="questionVideo" controls preload="metadata" poster="poster.svg">
-            <source id="videoSource" src="" type="video/mp4">
-            Your browser does not support the video tag.
+            <source id="videoSource" type="video/mp4">
+            您的浏览器不支持 video 标签。
           </video>
           <div class="video-placeholder">
             <span class="placeholder-icon" aria-hidden="true">🎬</span>
             <p>将 <code>media/nus-ba-video.mp4</code> 上传到仓库后，正式视频会在此处播放。</p>
-            <button id="previewButton" type="button" class="cta secondary">预览示例视频</button>
+            <button id="previewButton" type="button" class="cta">预览示例视频</button>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="container grid">
-        <div>
-          <h3>About This Page</h3>
-          <p>
-            This minimalist site ships with an automated GitHub Pages workflow. Push your changes to <code>main</code> and the latest
-            version will deploy globally within minutes—perfect for sharing during the application season.
-          </p>
-        </div>
-        <div>
-          <h3>Tips for Your Video</h3>
-          <ul>
-            <li>Introduce yourself and highlight your motivation for the NUS Business Analytics programme.</li>
-            <li>Focus on a concise narrative that ties your experience to future ambitions.</li>
-            <li>Keep the runtime aligned with NUS application requirements.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>
-          Include your contact details or relevant links so reviewers can reach you easily.
-          Update the placeholders below with your information, or swap in QR codes, Calendly links, or other channels you prefer.
-        </p>
-        <div class="contact-card">
-          <p><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <small>Designed to spotlight your NUS Business Analytics application. Tailor the content as needed.</small>
-    </div>
-  </footer>
-
+  <!-- 放在文末，或给 <script src="script.js" defer> -->
   <script src="script.js"></script>
 </body>
 </html>
