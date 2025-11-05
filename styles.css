@@ -243,9 +243,3 @@ a:focus {
 [data-video-ready] video {
   filter: none;
 }
-
-/* 容器允许标题更宽一些 */
-.hero .container{
-  max-width: min(1100px, 92vw);
-  text-align: center;
-}
