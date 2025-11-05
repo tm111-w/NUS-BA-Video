@@ -94,6 +94,7 @@ a:focus {
 
 .hero h1 {
   font-size: clamp(2.5rem, 4vw, 3.5rem);
+  white-space: nowrap;  
   margin-bottom: 1rem;
 }
 
